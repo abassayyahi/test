@@ -1,6 +1,6 @@
 # utils/__init__.py
 
-from .logger import Logger
-from .error_handler import ErrorHandler
+from .logger import setup_logger
+from .error_handler import ExchangeAPIError
 
-__all__ = ['Logger', 'ErrorHandler']
+__all__ = ['setup_logger', 'ExchangeAPIError']
