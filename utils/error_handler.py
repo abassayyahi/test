@@ -1,5 +1,6 @@
-from utils.logger import logger
+from utils.logger import setup_logger
 
+logger = setup_logger(__name__)
 
 class ExchangeAPIError(Exception):
     """Base exception class for exchange API related errors."""
