@@ -1,0 +1,78 @@
+arbitrage_bot/
+│
+├── exchanges/
+│   ├── __init__.py
+│   ├── kucoin.py
+│   ├── binance.py
+│   ├── ... (other exchanges)
+│
+├── utils/
+│   ├── __init__.py
+│   ├── logger.py
+│   ├── error_handler.py
+│   ├── ... (other utility modules)
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_kucoin.py
+│   ├── ... (tests for other modules)
+│
+├── main.py
+├── config.py
+└── README.md
+
+
+
+
+
+
+
+arbitrage_bot/
+│
+├── exchanges/
+│   ├── __init__.py
+│   ├── kucoin.py
+│   ├── binance.py
+│   ├── ... (other exchanges)
+│
+├── utils/
+│   ├── __init__.py
+│   ├── logger.py
+│   ├── error_handler.py
+│   ├── data_parser.py
+│   ├── notifier.py
+│   ├── ... (other utility modules)
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_kucoin.py
+│   ├── ... (tests for other modules)
+│
+├── database/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── db_utils.py
+│
+├── apis/
+│   ├── __init__.py
+│   ├── kucoin_api.py
+│   ├── binance_api.py
+│   ├── ... (other API modules)
+│
+├── strategies/
+│   ├── __init__.py
+│   ├── simple_arbitrage.py
+│   ├── triangular_arbitrage.py
+│   ├── ... (other strategy modules)
+│
+├── docs/
+│   ├── setup.md
+│   ├── usage.md
+│   ├── ... (other documentation files)
+│
+├── requirements.txt
+├── .env.example
+├── main.py
+├── config.py
+└── README.md
+
