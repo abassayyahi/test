@@ -1,31 +1,3 @@
-arbitrage_bot/
-│
-├── exchanges/
-│   ├── __init__.py
-│   ├── kucoin.py
-│   ├── binance.py
-│   ├── ... (other exchanges)
-│
-├── utils/
-│   ├── __init__.py
-│   ├── logger.py
-│   ├── error_handler.py
-│   ├── ... (other utility modules)
-│
-├── tests/
-│   ├── __init__.py
-│   ├── test_kucoin.py
-│   ├── ... (tests for other modules)
-│
-├── main.py
-├── config.py
-└── README.md
-
-
-
-
-
-
 
 arbitrage_bot/
 │
