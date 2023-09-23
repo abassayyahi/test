@@ -1,16 +1,14 @@
 import requests
-import hmac
-import hashlib
-import time
 import logging
+import os
 
 class BaseExchange:
     BASE_URL = ""
     HEADERS = {"Content-Type": "application/json"}
 
     def __init__(self, api_key=None, api_secret=None):
-        self.api_key = api_key
-        self.api_secret = api_secret
+        self.api_key = api_key or os.environ.get('EXCHANGE_API_KEY')
+        self.api_secret = api_secret or os.environ.get('EXCHANGE_API_SECRET')
 
     def _generate_signature(self, params):
         raise NotImplementedError
@@ -24,7 +22,6 @@ class BaseExchange:
             headers.update(self._get_private_headers())
 
         response = requests.request(method, url, headers=headers, params=params)
-        print(response.text)
 
         if response.status_code != 200:
             logging.error(f"Error {response.status_code}: {response.text}")
