@@ -1,10 +1,10 @@
 import unittest
-from exchanges.kucoinn import KucoinAPI
+from exchanges.kucoinn import KuCoinAPI
 
 class TestKucoinAPI(unittest.TestCase):
 
     def setUp(self):
-        self.api = KucoinAPI(api_key="YOUR_API_KEY", api_secret="YOUR_API_SECRET", api_passphrase="YOUR_API_PASSPHRASE")
+        self.api = KuCoinAPI(api_key="YOUR_API_KEY", api_secret="YOUR_API_SECRET", api_passphrase="YOUR_API_PASSPHRASE")
 
     def test_get_ticker(self):
         ticker = self.api.get_ticker("BTC-USDT")
