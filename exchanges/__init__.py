@@ -1,9 +1,6 @@
-from .kucoinn import KuCoinAPI
-from .binancee import BinanceAPI
-from .gateio import GateIOAPI
-from .mexc import MEXCAPI
-from .okex import OKexAPI
-from .bybit import BybitAPI
+from .kucoin import KuCoinExchange
+from .binance import BinanceExchange
+
 # ... other exchanges ...
 
-__all__ = ['KuCoinAPI', 'BinanceAPI', 'GateIOAPI', 'MEXCAPI', 'OKexAPI', 'BybitAPI']  # ... other exchanges ...
+__all__ = ['KuCoinExchange', 'BinanceExchange']  # ... other exchanges ...
